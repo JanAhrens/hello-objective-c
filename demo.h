@@ -1,6 +1,8 @@
+#include <Foundation/NSObject.h>
+
 @interface Foobar : NSObject
 
-@property(assign) NSString *str;
+@property(assign, atomic) NSString *str;
 
 -(id)init:(char *)msg;
 -(void)printMessage;

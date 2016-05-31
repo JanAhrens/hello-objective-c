@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #include <Foundation/NSString.h>
-#include <Foundation/NSObject.h>
 
 #include "demo.h"
 
@@ -33,7 +32,7 @@
 
 @end
 
-int main(int argc, char *argv[]) {
+int main() {
   Foobar *foobar = [[Foobar alloc] init: "Hello from constructor"];
   [foobar setMessage: "Hello World"];
   [foobar printMessage];

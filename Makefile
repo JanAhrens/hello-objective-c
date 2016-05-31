@@ -1,4 +1,4 @@
 all:
-	clang -framework Foundation -Wall demo.m -o demo
+	clang -framework Foundation -Weverything -Wno-objc-missing-property-synthesis demo.m -o demo
 clean:
 	rm -f demo
