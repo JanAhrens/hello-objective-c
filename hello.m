@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include <Foundation/NSString.h>
+#include <Foundation/NSException.h>
 
 #include "hello.h"
 
@@ -36,4 +37,10 @@ int main() {
   Foobar *foobar = [[Foobar alloc] init: "Hello from constructor"];
   [foobar setMessage: "Hello World"];
   [foobar printMessage];
+  @try {
+    [foobar thisMessageDoesNotExists];
+  }
+  @catch (NSException *exception) {
+    printf("Method not found\n");
+  }
 }
