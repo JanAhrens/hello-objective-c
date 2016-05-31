@@ -3,7 +3,7 @@
 
 #include <Foundation/NSString.h>
 
-#include "demo.h"
+#include "hello.h"
 
 @implementation Foobar
 
